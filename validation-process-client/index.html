@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .show {
+      font-size: 9px;
+      color: red;
+      font-style: italic;
+    }
+
+    input {
+      width: 70%;
+      height: 20px;
+      margin-top: 10px;
+    }
+
+    button {
+      height: 30px;
+      margin-right: 10px;
+      background-color: #a8acae;
+      min-width: 100px;
+    }
+  </style>
+</head>
+<body>
+<div style="width: 800px; margin:50px auto; background-color: #e3e7e9">
+  <div>
+    <div style="float: left"><p style="padding-left: 20px ">MULTI CONTACT FORM</p></div>
+    <div style="float: right; margin: 20px">
+      <button id="add-btn">Add Contact</button>
+      <button id="validate-btn">Validate</button>
+      <button id="save-btn">Save</button>
+    </div>
+    <hr style="clear: both"/>
+    <div style="padding: 20px">
+      <div style="width: 360px; float: left">
+        <p>Contact</p>
+        <hr/>
+        <div>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="name" name="name"/>
+            <br/>
+            <span id="name-error"></span>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="email" name="email"/>
+            <br/>
+            <span id="email-error"></span>
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" class="phone" name="phone"/>
+            <br/>
+            <span id="phone-error"></span>
+          </p>
+        </div>
+      </div>
+      <div style="width: 360px; float: right">
+        <div style="float: left">
+          <p>Contact</p>
+        </div>
+        <div style="float: right">
+          <button id="remove-btn">Remove</button>
+        </div>
+        <hr style="clear: both"/>
+        <div>
+          <p>
+            <label for="name1">Name:</label>
+            <input type="text" id="name1" class="name" name="name"/>
+            <br/>
+            <span id="name1-error"></span>
+          </p>
+          <p>
+            <label for="email1">Email:</label>
+
+            <input type="text" id="email1" name="email"/>
+            <br/>
+            <span id="email1-error"></span>
+          </p>
+          <p>
+            <label for="phone1">Phone:</label>
+            <input type="text" id="phone1" name="phone"/>
+            <br/>
+            <span id="phone1-error"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr style="clear: both"/>
+    <div style="padding: 20px">
+      <h4>Contacts</h4>
+      <div id="message"></div>
+      <div id="contacts"></div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="manager.js"></script>
+</html>
